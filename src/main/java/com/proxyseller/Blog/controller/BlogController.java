@@ -28,13 +28,13 @@ private  final BlogService blogService;
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @GetMapping("/{blogId}/like")
+    @PutMapping("/{blogId}/like")
     public ResponseEntity<Void> likeBlog(@PathVariable String blogId) {
         blogService.LikeToggle(blogId);
         return  ResponseEntity.ok().build();
     }
 
-    @GetMapping("/{blogId}/dislike")
+    @PutMapping("/{blogId}/dislike")
     public ResponseEntity<Void> dislikeBlog(@PathVariable String blogId) {
         blogService.DislikeToggle(blogId);
         return  ResponseEntity.ok().build();

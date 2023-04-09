@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "ca9026c8-4ce8-47d6-a781-480e2b07bd42",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14940955"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJzdWIiOiJiYXJiYXJvc3NhIiwiaXNzIjoid3d3LnByb3h5c2VsbGVyLmNvbSIsImlhdCI6MTY4MTAyNDcyMywiZXhwIjoxNjgxNjI5NTIzfQ.jHCEzs9pXLDWU4_t2uFB-l1Z9MUHrExMBBWAM2xW4GCiozVlA1lPV7E5hP-Lo8rVmeEx-UAstcTU_Dq8bsg-gQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"barbarossa1\",\r\n    \"password\": \"Ash@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/64326696f01aee5fd66e5568",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"64326696f01aee5fd66e5568"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJzdWIiOiJiYXJiYXJvc3NhIiwiaXNzIjoid3d3LnByb3h5c2VsbGVyLmNvbSIsImlhdCI6MTY4MTAyNDcyMywiZXhwIjoxNjgxNjI5NTIzfQ.jHCEzs9pXLDWU4_t2uFB-l1Z9MUHrExMBBWAM2xW4GCiozVlA1lPV7E5hP-Lo8rVmeEx-UAstcTU_Dq8bsg-gQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/64326696f01aee5fd66e5568",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"64326696f01aee5fd66e5568"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
